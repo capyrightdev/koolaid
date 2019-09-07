@@ -1,0 +1,10 @@
+name: koolaid
+version: ${project.version}
+main: me.capyright.Main
+api-version: 1.13
+commands:
+  gamemode:
+    aliases: [gm, gmc, gms, gmsp]
+  koolaid:
+    aliases: [help, kl, kooltheaid]
+  verify:
