@@ -5,6 +5,7 @@ import me.capyright.Utils.s;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -33,10 +34,10 @@ public class Events implements Listener {
     public void onMove(PlayerMoveEvent e) {
         Player p = e.getPlayer();
         Location loc = e.getPlayer().getLocation();
-        Block b  = loc.getBlock();
-        if(b.getType() == Material.WOOL && b.getData() == 35) {
-            e.setCancelled(true);
-            p.sendMessage(c.c("&cDenied"));
+        Block b = loc.getBlock().getRelative(BlockFace.DOWN);
+        if (b.getType() == Material.WOOL) {
+            p.setVelocity(loc.getDirection().multiply(-0.1));
+            p.sendMessage(c.c("&c" + s.star + " You are not allowed to leave this area!"));
         }
     }
     @EventHandler

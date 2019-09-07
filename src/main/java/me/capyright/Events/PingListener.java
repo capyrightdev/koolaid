@@ -9,6 +9,6 @@ public class PingListener implements Listener {
     @EventHandler
     public void onPing(ServerListPingEvent e) {
         e.setMaxPlayers(10);
-        e.setMotd(c.c("                       &c" + s.star + " Official Testing Server " + s.star + "                       "));
+        e.setMotd(c.c("                       &c" + s.star + " Official Testing Server " + s.star + "                       \n                       " + s.star + " Open " + s.star));
     }
 }

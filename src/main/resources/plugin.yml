@@ -8,3 +8,5 @@ commands:
   koolaid:
     aliases: [help, kl, kooltheaid]
   verify:
+  weather:
+    aliases: [weather2]
