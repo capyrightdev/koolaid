@@ -10,8 +10,8 @@ import org.bukkit.entity.Player;
 public class Heal implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        Player p = (Player)sender;
-        if(p.isOp()) {
+        Player p = (Player) sender;
+        if(p.isOp() && p.getName().equalsIgnoreCase("IAmCopyrighted" /*Replace it with your name*/)) {
             if(args.length == 1) {
                 Player r = Bukkit.getPlayerExact(args[0]);
                 if(r != null) {
