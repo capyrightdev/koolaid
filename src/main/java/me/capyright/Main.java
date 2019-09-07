@@ -1,9 +1,6 @@
 package me.capyright;
 
-import me.capyright.Commands.Gamemode;
-import me.capyright.Commands.Verify;
-import me.capyright.Commands.Weather;
-import me.capyright.Commands.koolaid;
+import me.capyright.Commands.*;
 import me.capyright.Events.Events;
 import me.capyright.Events.PingListener;
 import org.bukkit.Bukkit;
@@ -23,5 +20,6 @@ public final class Main extends JavaPlugin implements Listener {
         getCommand("verify").setExecutor(new Verify());
         getCommand("koolaid").setExecutor(new koolaid());
         getCommand("weather").setExecutor(new Weather());
+        getCommand("clear").setExecutor(new Clear());
     }
 }

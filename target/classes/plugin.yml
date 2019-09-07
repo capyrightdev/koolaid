@@ -9,3 +9,5 @@ commands:
     aliases: [help, kl, kooltheaid]
   verify:
   weather:
+  clear:
+    aliases: [ci, clearinventory]
