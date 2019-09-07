@@ -36,7 +36,7 @@ public class Events implements Listener {
         Location loc = e.getPlayer().getLocation();
         Block b = loc.getBlock().getRelative(BlockFace.DOWN);
         if (b.getType() == Material.WOOL) {
-            p.setVelocity(loc.getDirection().multiply(-0.2));
+            p.setVelocity(loc.getDirection().multiply(-0.3));
             p.sendMessage(c.c("&c" + s.star + " You are not allowed to leave this area!"));
         }
     }
