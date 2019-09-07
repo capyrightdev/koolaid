@@ -22,5 +22,6 @@ public final class Main extends JavaPlugin implements Listener {
         getCommand("weather").setExecutor(new Weather());
         getCommand("clear").setExecutor(new Clear());
         getCommand("suicide").setExecutor(new Kill());
+        getCommand("heal").setExecutor(new Heal());
     }
 }

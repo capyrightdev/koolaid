@@ -13,3 +13,4 @@ commands:
     aliases: [ci, clearinventory]
   suicide:
     aliases: [kill]
+  heal:
