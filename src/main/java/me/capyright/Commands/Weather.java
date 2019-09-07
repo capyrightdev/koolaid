@@ -26,6 +26,7 @@ public class Weather implements CommandExecutor {
                         p.sendMessage(c.c("&c" + s.star + "&7 Weather has been set to &craining&7."));
                         break;
                     case "storm":
+                    case "thunda":
                     case "thunder":
                         p.setPlayerWeather(WeatherType.DOWNFALL);
                         p.sendMessage(c.c("&c" + s.star + "&7 Weather has been set to &cthunder&7."));

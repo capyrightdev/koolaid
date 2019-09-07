@@ -19,7 +19,7 @@ public class Verify implements CommandExecutor {
                 p.sendMessage(c.c("&cYou're not on the verification list!"));
             }
         } else {
-            p.sendMessage(c.c("&c" + s.triangle + "&c You've already been verified!"));
+            p.sendMessage(c.c("&c" + s.star + "&c You've already been verified!"));
         }
         return false;
     }

@@ -42,7 +42,7 @@ public class Gamemode implements CommandExecutor {
                 p.sendMessage(c.c("&c" + s.double_arrow + "&7 Your gamemode has been updated to &csurvival&7."));
             } else if(label.equalsIgnoreCase("gmsp")) {
                 p.setGameMode(GameMode.SPECTATOR);
-                p.sendMessage(c.c("&c" + s.double_arrow + "&7 Your gamemode has been updated to &cspectator&7."));
+                p.sendMessage(c.c("&c" + s.double_arrow +  "&7Your gamemode has been updated to &cspectator&7."));
             }
         }
         return false;

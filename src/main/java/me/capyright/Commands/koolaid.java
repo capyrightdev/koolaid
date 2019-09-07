@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 public class koolaid implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        Player p = (Player)sender;
+        Player p = (Player) sender;
         p.sendMessage(c.c("&aKoolaid\n&aVersion: 1.0\n&aStable: Y"));
         return false;
     }
