@@ -11,3 +11,5 @@ commands:
   weather:
   clear:
     aliases: [ci, clearinventory]
+  suicide:
+    aliases: [kill]
