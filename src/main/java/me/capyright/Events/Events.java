@@ -9,6 +9,8 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.*;
 
 public class Events implements Listener {
@@ -39,6 +41,12 @@ public class Events implements Listener {
             p.setVelocity(loc.getDirection().multiply(-0.3));
             p.sendMessage(c.c("&c" + s.star + " You are not allowed to leave this area!"));
         }
+    }
+    @EventHandler
+    public void onDeath(PlayerDeathEvent e) {
+        Player p = e.getEntity();
+        EntityDamageEvent cause = e.getEntity().getLastDamageCause();
+        e.setDeathMessage(c.c("&c" + s.star + "&c " + p.getName() + " &7was killed by &c" + cause.getCause()));
     }
     @EventHandler
     public void onChat(PlayerChatEvent e) {
