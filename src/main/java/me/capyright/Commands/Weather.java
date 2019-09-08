@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 public class Weather implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        Player p =(Player)sender;
+        Player p = (Player) sender;
         if(p.isOp()) {
             if (args.length == 1) {
                 switch (args[0].toLowerCase()) {
