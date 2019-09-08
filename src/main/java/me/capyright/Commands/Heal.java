@@ -14,11 +14,13 @@ public class Heal implements CommandExecutor {
         if(p.isOp() && p.getName().equalsIgnoreCase("IAmCopyrighted" /*Replace it with your name*/)) {
             if(args.length == 1) {
                 Player r = Bukkit.getPlayerExact(args[0]);
-                if(r != null) {
+                if(r != null && !r.isOp()) {
                     r.setHealth(20);
                     r.setFoodLevel(20);
                     p.sendMessage(c.c("&c" + s.star  + "&7 You have healed &c" + r.getName() + "&7."));
                     r.sendMessage(c.c("&c" + s.star + "&7 You have been healed by&c " + p.getName() + "&7."));
+                } else {
+                    p.sendMessage(c.c("&cEither the player is you're trying to feed is not valid, or they're opped"));
                 }
             } else {
                 p.setHealth(20);
