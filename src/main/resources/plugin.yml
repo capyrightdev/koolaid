@@ -14,3 +14,4 @@ commands:
   suicide:
     aliases: [kill]
   heal:
+  feed:
