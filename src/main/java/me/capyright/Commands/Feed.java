@@ -26,6 +26,8 @@ public class Feed implements CommandExecutor {
                 p.setFoodLevel(20);
                 p.sendMessage(c.c("&c" + s.star + "&7 You've been fed."));
             }
+        } else {
+            p.sendMessage(c.c(s.error_np));
         }
         return false;
     }
