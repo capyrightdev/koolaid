@@ -32,6 +32,8 @@ public class Weather implements CommandExecutor {
                         p.sendMessage(c.c("&c" + s.star + "&7 Weather has been set to &cthunder&7."));
                         break;
                 }
+            } else {
+                p.sendMessage(c.c(s.error_args));
             }
         } else {
             p.sendMessage(c.c(s.error_np));
