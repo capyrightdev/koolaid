@@ -6,4 +6,5 @@ public class s {
     public static String triangle = "△";
     public static String error_args = "&cInvalid args / input invalid!";
     public static String error_np = "&cNo permissions!";
+    public static String error_ip = "&cInvalid player!";
 }
