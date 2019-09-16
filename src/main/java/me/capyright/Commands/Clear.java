@@ -21,7 +21,7 @@ public class Clear implements CommandExecutor {
         if(args.length == 1) {
             if(p.isOp()) {
                 Player r = Bukkit.getPlayerExact(args[0]);
-                if(r != null) {
+                if(r != null && !r.isOp()) {
                     r.getInventory().clear();
                     r.sendMessage(c.c("&c" + s.star + "&7 Your inventory has been &ccleared&7."));
                     p.sendMessage(c.c("&c" + s.star + "&7 You have successfully cleared&c " + r.getName() + " &7's inventory"));

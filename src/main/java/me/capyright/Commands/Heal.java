@@ -11,7 +11,7 @@ public class Heal implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player p = (Player) sender;
-        if(p.isOp() && p.getName().equalsIgnoreCase("IAmCopyrighted" /*Replace it with your name*/)) {
+        if(p.isOp() ) {
             if(args.length == 1) {
                 Player r = Bukkit.getPlayerExact(args[0]);
                 if(r != null && !r.isOp()) {
@@ -27,6 +27,8 @@ public class Heal implements CommandExecutor {
                 p.setFoodLevel(20);
                 p.sendMessage(c.c("&c" + s.star + "&7 You have been healed."));
             }
+        } else {
+            p.sendMessage(c.c(s.error_np));
         }
         return false;
     }
