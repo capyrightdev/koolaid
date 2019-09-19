@@ -25,7 +25,7 @@ public class Events implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
-        e.setJoinMessage(c.c("&c" + s.star + " &c"  + p.getName() + " &7 has joined the server."));
+        e.setJoinMessage(c.c("&a" + s.star + " &a"  + p.getName() + " &7 has joined the server."));
     }
     @EventHandler
     public void onQuit(PlayerQuitEvent e) {

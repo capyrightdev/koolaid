@@ -31,7 +31,11 @@ public class Gamemode implements CommandExecutor {
                         p.sendMessage(c.c("&c" + s.double_arrow + "&7 Your gamemode has been updated to &cspectator&7."));
                         break;
                 }
+            } else {
+                p.sendMessage(c.c(s.error_args));
             }
+        } else {
+            p.sendMessage(c.c(s.error_np));
         }
         if(p.isOp()) {
             if(label.equalsIgnoreCase("gmc")) {
@@ -44,6 +48,8 @@ public class Gamemode implements CommandExecutor {
                 p.setGameMode(GameMode.SPECTATOR);
                 p.sendMessage(c.c("&c" + s.double_arrow +  "&7Your gamemode has been updated to &cspectator&7."));
             }
+        } else {
+            p.sendMessage(c.c(s.error_np));
         }
         return false;
     }
