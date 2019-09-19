@@ -21,5 +21,6 @@ public final class Main extends JavaPlugin implements Listener {
         getCommand("suicide").setExecutor(new Kill());
         getCommand("heal").setExecutor(new Heal());
         getCommand("feed").setExecutor(new Feed());
+        getCommand("cc").setExecutor(new CC());
     }
 }
