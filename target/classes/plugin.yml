@@ -16,3 +16,4 @@ commands:
   heal:
   feed:
   cc:
+    aliases: [clearchat, chatclear, cchat, clearc]

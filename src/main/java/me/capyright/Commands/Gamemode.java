@@ -13,7 +13,7 @@ public class Gamemode implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player p = (Player)sender;
         if(p.isOp()) {
-            if(args.length == 1) {
+            if (args.length == 1) {
                 switch (args[0].toLowerCase()) {
                     case "c":
                     case "creative":
@@ -32,7 +32,7 @@ public class Gamemode implements CommandExecutor {
                         break;
                 }
             } else {
-                p.sendMessage(c.c(s.error_args));
+                p.sendMessage(c.c(s.error_ip));
             }
         } else {
             p.sendMessage(c.c(s.error_np));
