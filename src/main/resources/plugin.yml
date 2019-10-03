@@ -17,3 +17,7 @@ commands:
   feed:
   clearchat:
     aliases: [cc, chatclear, cchat, clearc]
+  tp:
+    aliases: [teleport]
+  tphere:
+    [tp2p]
