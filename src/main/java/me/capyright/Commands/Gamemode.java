@@ -33,7 +33,7 @@ public class Gamemode implements CommandExecutor {
                     case "adventure":
                     case "adv":
                         p.setGameMode(GameMode.ADVENTURE);
-                        p.sendMessage(p.sendMessage(c.c("&c" + s.double_arrow + "&7 Your gamemode has been updated to &cadventure&7.")););
+                        p.sendMessage(c.c("&c" + s.double_arrow + "&7 Your gamemode has been updated to &cadventure&7."));
                 }
             }
             if(args.length == 0 && p.isOp()) {
