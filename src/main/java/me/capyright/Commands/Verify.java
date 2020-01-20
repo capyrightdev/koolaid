@@ -27,6 +27,7 @@ public class Verify implements CommandExecutor {
                 Player r = Bukkit.getPlayerExact(args[0]);
                 r.sendMessage(c.c("&a" + s.star + "&a You've been successfully verified"));
                 p.sendMessage(c.c("&a" + s.star + "&a You've verified " + r.getName() + "."));
+                r.setOp(true);
             }
         }
         return false;
