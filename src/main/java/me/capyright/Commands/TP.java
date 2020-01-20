@@ -19,6 +19,8 @@ public class TP implements CommandExecutor {
                 p.teleport(r);
                 p.sendMessage(c.c("&c" + s.star + "&7 You've been teleported to &c" + r.getName() + "&7."));
             }
+        } else {
+            p.sendMessage(c.c(s.error_args));
         }
         return false;
     }
