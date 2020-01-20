@@ -23,5 +23,6 @@ public final class Main extends JavaPlugin implements Listener {
         getCommand("feed").setExecutor(new Feed());
         getCommand("cc").setExecutor(new CC());
         getCommand("tp").setExecutor(new TP());
+        getCommand("tphere").setExecutor(new TPHere());
     }
 }

@@ -15,10 +15,9 @@ commands:
     aliases: [kill]
   heal:
   feed:
-<<<<<<< HEAD
-  cc:
-    aliases: [clearchat, chatclear, cchat, clearc]
-=======
   clearchat:
     aliases: [cc, chatclear, cchat, clearc]
->>>>>>> 7cfe03eaeb1b7789fcf6abf1450d3daf7c544aa2
+  tp:
+    aliases: [teleport]
+  tphere:
+    aliases: [tp2p]

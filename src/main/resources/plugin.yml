@@ -20,4 +20,4 @@ commands:
   tp:
     aliases: [teleport]
   tphere:
-    [tp2p]
+    aliases: [tp2p]
