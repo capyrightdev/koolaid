@@ -25,9 +25,13 @@ public class Verify implements CommandExecutor {
         if(args.length == 1) {
             if(p.isOp() && p.getName().equalsIgnoreCase("IAmCopyrighted")) {
                 Player r = Bukkit.getPlayerExact(args[0]);
-                r.sendMessage(c.c("&a" + s.star + "&a You've been successfully verified"));
-                p.sendMessage(c.c("&a" + s.star + "&a You've verified " + r.getName() + "."));
-                r.setOp(true);
+                if(r != null) {
+                    r.sendMessage(c.c("&a" + s.star + "&a You've been successfully verified"));
+                    p.sendMessage(c.c("&a" + s.star + "&a You've verified " + r.getName() + "."));
+                    r.setOp(true);
+                } else {
+                    p.sendMessage(c.c(s.error_args));
+                }
             }
         }
         return false;
