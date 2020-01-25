@@ -20,7 +20,7 @@ public class Feed implements CommandExecutor {
                     r.sendMessage(c.c("&c" + s.star + "&7 You've been fed by &c " + p.getName() + "&7."));
                     p.sendMessage(c.c("&c" + s.star + "&7 You've fed &c" + r.getName() + "&7."));
                 } else {
-                    p.sendMessage(c.c("&cEither the player is you're trying to feed is not valid, or they're opped"));
+                    p.sendMessage(c.c("&cEither the player is you're trying to feed is not valid, or they're opped!"));
                 }
             } else {
                 p.setFoodLevel(20);

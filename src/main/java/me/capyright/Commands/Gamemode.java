@@ -20,13 +20,13 @@ public class Gamemode implements CommandExecutor {
                         p.setGameMode(GameMode.CREATIVE);
                         p.sendMessage(c.c("&c" + s.double_arrow + "&7 Your gamemode has been updated to &ccreative&7."));
                         break;
-                    case "s":
                     case "survival":
                         p.setGameMode(GameMode.SURVIVAL);
                         p.sendMessage(c.c("&c" + s.double_arrow + "&7 Your gamemode has been updated to &csurvival&7."));
                         break;
                     case "spec":
                     case "spectator":
+                    case "s":
                         p.setGameMode(GameMode.SPECTATOR);
                         p.sendMessage(c.c("&c" + s.double_arrow + "&7 Your gamemode has been updated to &cspectator&7."));
                         break;
